@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void computeHomeValue(void); //prototype the function beforehand
+
+
+int main( void )
+{
+   computeHomeValue();
+   system("PAUSE");
+   return 0;
+} 
+
+
+void computeHomeValue (void) 
+{
+     int popularity ;
+     int size ;
+     int HomeValue;     
+
+     printf(" Enter popularity\n" );
+     scanf( "%d", &popularity );       
+
+     printf( "Enter size\n" ); 
+     scanf( "%d", &size );    
+     HomeValue = (pow(popularity,3)+ pow(size,2))*1000; /* calculate the price*/
+     
+     printf( "Your value is: %d\n", HomeValue ); 
+     return 0;
+}
